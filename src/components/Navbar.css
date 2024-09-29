@@ -1,0 +1,66 @@
+/* Mengimpor font Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Root CSS variables */
+:root {
+  --warna-premierNavbar: #445D48;  /* Hijau primer */
+  --warna-sekunderNavbar: #f5f5f5;  /* Abu-abu terang */
+  --warna-putih2Navbar: #ffffff;    /* Putih */
+  --warna-tersierNavbar: #D6CC99;   /* Beige */
+  --warna-buttonNavbar: #FDE5D4;    /* Peach untuk button */
+  --warna-textNavbar: #001524;      /* Hitam kebiruan untuk teks */
+}
+
+/* General styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;  /* Menggunakan font Poppins di seluruh elemen */
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--warna-premierNavbar); /* Warna latar belakang navbar */
+  padding: 10px 20px;
+  color: var(--warna-putih2Navbar); /* Warna teks navbar */
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Jarak antar item */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: var(--warna-putih2Navbar); /* Warna tautan */
+  text-decoration: none; /* Menghapus garis bawah pada tautan */
+  transition: color 0.3s; /* Efek transisi pada hover */
+}
+
+.navbar a:hover {
+  color: var(--warna-tersierNavbar); /* Warna saat hover */
+}
+
+.navbar-button {
+  background-color: var(--warna-premierNavbar); /* Warna latar belakang tombol */
+  padding: 10px 15px; /* Jarak dalam tombol */
+  border: none; /* Menghapus border */
+  border-radius: 5px; /* Sudut membulat */
+  cursor: pointer; /* Pointer saat hover */
+  transition: background-color 0.3s; /* Efek transisi pada hover */
+}
+
+.navbar-button:hover {
+  background-color: var(--warna-textNavbar); /* Warna saat hover */
+}

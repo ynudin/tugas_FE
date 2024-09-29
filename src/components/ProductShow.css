@@ -1,0 +1,47 @@
+.product-show {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  width: 200px; /* Atur lebar sesuai kebutuhan */
+  cursor: pointer; /* Menunjukkan bahwa item bisa diklik */
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-detail {
+  position: fixed; /* Agar tetap di layar */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  z-index: 1000; /* Pastikan di atas elemen lain */
+}
+
+.product-detail button {
+  margin-bottom: 10px;
+}
+
+.detail-image { 
+  width: 200px; /* Atur lebar sesuai kebutuhan */
+  height: auto; /* Pertahankan rasio aspek */
+  max-height: 300px; /* Batasi tinggi maksimum */
+}
